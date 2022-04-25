@@ -6,7 +6,7 @@ export default function Input(props) {
     <React.Fragment>
       <label className={styles.label}>{props.label}</label>
       <div className={styles["input__control"]}>
-        <img className={styles.icon} src={`./images/${props.icon}`} />
+        <img className={styles.icon} src={`./images/${props.icon}`} alt={props.icon} />
         {props.value === 0 && (
           <span className={styles.error}>Can't be zero</span>
         )}

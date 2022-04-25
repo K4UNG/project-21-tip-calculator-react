@@ -47,13 +47,13 @@ export default function InputSelect(props) {
           <button
             data-tip={option.percent}
             className={`${styles.option} ${
-              option.percent == props.percent && styles.active
+              option.percent === parseFloat(props.percent) && styles.active
             }`}
             key={option.id}
             onClick={(e) => {
               props.onClick((prevState) => {
                 customRef.current.value = ''
-                if (prevState.percent == e.target.dataset.tip) {
+                if (prevState.percent === parseFloat(e.target.dataset.tip)) {
                   return {
                     ...prevState,
                     percent: "",
