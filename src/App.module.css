@@ -15,6 +15,18 @@
     margin: auto;
 }
 
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer a {
+    color: var(--clr-primary-800)
+}
+
 @media (min-width: 820px) {
     .wrapper {
         display: grid;

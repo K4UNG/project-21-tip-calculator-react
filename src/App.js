@@ -1,23 +1,34 @@
-import { useState } from 'react'
-import styles from './App.module.css'
-import TipInput from './components/TipInput/TipInput'
-import TipOutput from './components/TipOutput/TipOutput'
+import { useState } from "react";
+import styles from "./App.module.css";
+import TipInput from "./components/TipInput/TipInput";
+import TipOutput from "./components/TipOutput/TipOutput";
 
 function App() {
-   const [inputData, setInputData] = useState({
-    bill: '',
-    people: '',
-    percent: ''
-  })
+  const [inputData, setInputData] = useState({
+    bill: "",
+    people: "",
+    percent: "",
+  });
   return (
-    <div className={styles.App}>
-      <h1 className={styles.heading}>spli<br/>tter</h1>
+    <main className={styles.App}>
+      <h1 className={styles.heading}>
+        spli
+        <br />
+        tter
+      </h1>
 
       <div className={styles.wrapper}>
         <TipInput data={inputData} setData={setInputData} />
         <TipOutput data={inputData} setData={setInputData} />
       </div>
-    </div>
+      <footer className={styles.footer}>
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by <a href="https://www.github.com/k4ung">K4UNG</a>.
+      </footer>
+    </main>
   );
 }
 

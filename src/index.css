@@ -20,4 +20,5 @@
 body {
   background: var(--clr-accent-400);
   min-height: 100vh;
+  position: relative;
 }
