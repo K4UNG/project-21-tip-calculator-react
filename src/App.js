@@ -23,7 +23,7 @@ function App() {
       </div>
       <footer className={styles.footer}>
         Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a href="https://www.frontendmentor.io?ref=challenge">
           Frontend Mentor
         </a>
         . Coded by <a href="https://www.github.com/k4ung">K4UNG</a>.
