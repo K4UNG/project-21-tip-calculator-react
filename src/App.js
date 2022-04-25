@@ -11,6 +11,7 @@ function App() {
   });
   return (
     <main className={styles.App}>
+      <div className={styles['super__wrapper']}>
       <h1 className={styles.heading}>
         spli
         <br />
@@ -20,6 +21,7 @@ function App() {
       <div className={styles.wrapper}>
         <TipInput data={inputData} setData={setInputData} />
         <TipOutput data={inputData} setData={setInputData} />
+      </div>
       </div>
       <footer className={styles.footer}>
         Challenge by{" "}

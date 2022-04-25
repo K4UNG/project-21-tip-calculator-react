@@ -2,7 +2,7 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--clr-primary-800);
-    margin: 1.5em 0;
+    margin: 1em 0;
     letter-spacing: 5px;
 }
 
@@ -36,8 +36,9 @@
         grid-column-gap: 1.5rem;
     }
 
-    .App {
+    main {
         display: grid;
         place-items: center;
+        min-height: 100vh;
     }
 }
