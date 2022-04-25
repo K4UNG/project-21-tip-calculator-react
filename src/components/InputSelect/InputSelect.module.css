@@ -47,4 +47,11 @@
 .custom::placeholder {
     text-align: center;
     color: var(--clr-primary-600);
+    font-size: 1.2rem;
+}
+
+@media (min-width: 650px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
